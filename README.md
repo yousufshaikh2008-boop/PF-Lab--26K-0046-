@@ -11,4 +11,4 @@
 - GitHub
 
 
-**  _Note: I am still a student and is between my studies_.**
+**_Note: I am still a student and is between my studies_**
