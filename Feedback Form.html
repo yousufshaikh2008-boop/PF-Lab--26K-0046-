@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        /* Base page reset and center layout */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Feedback Container Styling */
+        .feedback-container {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 450px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .feedback-title {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333333;
+        }
+
+        /* Form Controls */
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 14px;
+            color: #555555;
+            font-weight: 500;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group textarea {
+            width: 100%;
+            padding: 10px 12px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #007bff;
+        }
+
+        /* Rating System (Radio Buttons) Styling */
+        .rating-group {
+            margin-bottom: 20px;
+        }
+
+        .rating-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+            color: #555555;
+            font-weight: 500;
+        }
+
+        .rating-options {
+            display: flex;
+            justify-content: space-between;
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #e9ecef;
+        }
+
+        .rating-option {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 12px;
+            color: #333;
+            cursor: pointer;
+        }
+
+        .rating-option input {
+            margin-bottom: 4px;
+            cursor: pointer;
+        }
+
+        /* Submit Button Styling */
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #28a745;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="feedback-container">
+        <h2 class="feedback-title">Feedback Form</h2>
+        <form action="#" method="POST">
+            <!-- Name Input -->
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <!-- Email Input -->
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <!-- 1 to 5 Rating System -->
+            <div class="rating-group">
+                <label>Rate Your Experience:</label>
+                <div class="rating-options">
+                    <label class="rating-option">
+                        <input type="radio" name="rating" value="1" required>
+                        1 ★
+                    </label>
+                    <label class="rating-option">
+                        <input type="radio" name="rating" value="2">
+                        2 ★
+                    </label>
+                    <label class="rating-option">
+                        <input type="radio" name="rating" value="3">
+                        3 ★
+                    </label>
+                    <label class="rating-option">
+                        <input type="radio" name="rating" value="4">
+                        4 ★
+                    </label>
+                    <label class="rating-option">
+                        <input type="radio" name="rating" value="5">
+                        5 ★
+                    </label>
+                </div>
+            </div>
+
+            <!-- Feedback Message -->
+            <div class="form-group">
+                <label for="message">Feedback Message</label>
+                <textarea id="message" name="message" placeholder="Write your feedback here..." required></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Submit Feedback</button>
+        </form>
+    </div>
+
+</body>
+</html>

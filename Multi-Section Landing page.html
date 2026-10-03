@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        section {
+            background-color: #ffffff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 3px;
+            width: auto;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        input, textarea {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+            max-width: 300px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Responsive Design Rules */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            section {
+                padding: 15px;
+            }
+
+            input, textarea, button {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section>
+        <h1>Welcome to Our Site</h1>
+        <p>We provide simple web solutions.</p>
+        <button>Get Started</button>
+    </section>
+
+    <!-- About Us Section -->
+    <section>
+        <h2>About Us</h2>
+        <p>We are a small team focused on simple design.</p>
+        <img src="https://via.placeholder.com/300x150" alt="About Us">
+    </section>
+
+    <!-- Services Section -->
+    <section>
+        <h2>Our Services</h2>
+        <ul>
+            <li>Web Design</li>
+            <li>Web Development</li>
+            <li>Digital Marketing</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section>
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+</body>
+</html>
